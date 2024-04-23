@@ -4,7 +4,6 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-# static 폴더를 'static' 경로로 마운트
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/", response_class=HTMLResponse)
@@ -14,8 +13,9 @@ def read_root():
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Image and Button Page</title>
+        <title>Pingo</title>
         <style>
             body, html {
                 margin: 0;
