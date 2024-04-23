@@ -63,7 +63,7 @@ def read_root():
         <div id="background2" class="background"></div>
         <a href="https://t.me/pingo_portal" target="_blank" class="button" id="button1"></a>
         <a href="https://twitter.com/pingoonsol/media" target="_blank" class="button" id="button2"></a>
-        <a href="" target="_blank" class="button" id="button3"></a>
+        <a href="https://pump.fun/7hKymZkngcSNFCtabbv4YKTbJCdNhZGVnvtw8FGcYLc5" target="_blank" class="button" id="button3"></a>
     </body>
     </html>
     """
