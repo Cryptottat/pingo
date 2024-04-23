@@ -49,7 +49,7 @@ def read_root():
 <body>
     <a href="https://t.me/pingo_portal" target="_blank" class="button" id="button1"></a>
     <a href="https://twitter.com/pingoonsol/media" target="_blank" class="button" id="button2"></a>
-    <a href="https://example.com/link3" target="_blank" class="button" id="button3"></a>
+    <a href="" target="_blank" class="button" id="button3"></a>
 </body>
     </html>
     """
