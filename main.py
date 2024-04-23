@@ -26,8 +26,8 @@ def read_root():
             }
             .background {
                 width: 100%; /* Each background takes full width */
-                height: auto; /* Height is auto to maintain aspect ratio */
-                background-size: 100% auto; /* Adjust width and maintain aspect ratio */
+                height: 100vh; /* Use viewport height for each image */
+                background-size: cover; /* Cover the entire area of div */
                 background-repeat: no-repeat; /* Do not repeat the image */
             }
             #background1 {
