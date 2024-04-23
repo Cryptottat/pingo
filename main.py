@@ -17,18 +17,35 @@ def read_root():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pingo</title>
         <style>
-            body, html {
+            html, body {
                 margin: 0;
                 padding: 0;
-                height: 100%;
-                background: url('/static/background.png') no-repeat center center fixed;
+                height: 200%; 
+                width: 100%;
+                overflow-x: hidden; 
+            }
+            #background1 {
+                background: url('/static/background.png') no-repeat center center;
                 background-size: cover;
+                position: fixed;
+                width: 100%;
+                height: 50%;
+                top: 0;
+            }
+            #background2 {
+                background: url('/static/background2.png') no-repeat center center;
+                background-size: cover;
+                position: fixed;
+                width: 100%;
+                height: 50%; 
+                top: 50%; 
             }
             .button {
                 width: 100px;
                 height: 100px;
                 background-size: contain;
                 background-repeat: no-repeat;
+                display: block; /* Make sure anchor tags behave like block elements */
                 position: absolute;
                 top: 10px;
             }
@@ -46,11 +63,13 @@ def read_root():
             }
         </style>
     </head>
-<body>
-    <a href="https://t.me/pingo_portal" target="_blank" class="button" id="button1"></a>
-    <a href="https://twitter.com/pingoonsol/media" target="_blank" class="button" id="button2"></a>
-    <a href="" target="_blank" class="button" id="button3"></a>
-</body>
+    <body>
+        <div id="background1"></div>
+        <div id="background2"></div>
+        <a href="https://t.me/pingo_portal" target="_blank" class="button" id="button1"></a>
+        <a href="https://twitter.com/pingoonsol/media" target="_blank" class="button" id="button2"></a>
+        <a href="" target="_blank" class="button" id="button3"></a>
+    </body>
     </html>
     """
 
